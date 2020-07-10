@@ -1,7 +1,8 @@
 namespace totoro.CodeAnalysis
 {
-    enum SyntaxKind
+    public enum SyntaxKind
     {
+        // Tokens
         NumberToken,
         WhitespaceToken,
         PlusToken,
@@ -12,6 +13,9 @@ namespace totoro.CodeAnalysis
         CloseParenthesisToken,
         BadToken,
         EndOfFileToken,
+
+
+        // Expressions
         NumberExpression,
         BinaryExpression,
         ParenthesizedExpression

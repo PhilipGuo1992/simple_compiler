@@ -5,9 +5,9 @@ using totoro.CodeAnalysis;
 
 namespace totoro
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             bool showTree = false;
 
@@ -80,7 +80,7 @@ namespace totoro
             }
 
             Console.WriteLine();
-            indent += isLast ? "    " : "│  ";
+            indent += isLast ? "   " : "│  ";
             var lastChild = node.GetChildren().LastOrDefault();
 
             foreach(var child in node.GetChildren())
